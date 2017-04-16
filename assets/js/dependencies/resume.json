@@ -1,0 +1,168 @@
+{
+  "basics": {
+    "name": "Samir Suthar",
+    "label": "Web Developer",
+    "picture": "https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-1/p320x320/13699980_10157223853430173_4637503038804718965_n.jpg?oh=4bd32b9437f52fe51a16a46a1a155c57&oe=5958D893",
+    "email": "samir.suthar90@gmail.com",
+    "phone": "(801).641.0682",
+    "website": "http://samirsuthar.com",
+    "summary": "Born and raised in Salt Lake City, Samir started out his development career with a company called New World Presents. Starting out by learning WordPress, Samir quickly moved on to learn SailsJS Framework. He continued to push his own development by learning how to program in C/C++/Python to create interactive art installations using Raspberry Pis and Arduinos.",
+    "location": {
+      "address": "25 T Street",
+      "postalCode": "84103",
+      "city": "Salt Lake City",
+      "countryCode": "US",
+      "region": "Utah"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Samir Suthar",
+        "url": "https://www.linkedin.com/in/samir-suthar-461a2261/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Akashaslc",
+        "url": "https://github.com/Akashaslc"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "New World Presents",
+      "position": "Creative Designer",
+      "website": "http://newworldpresents.com/",
+      "startDate": "2013-04-13",
+      "endDate": "Present",
+      "summary": "New World Presents is a event and production company aimed on bringing transformational events and festivals closer to the Utah area. As Creative Designer, I keep the aesthetic to our City Festivals inline with our vision and integrate interactive elements with in our city events. My responsibilities range from managing and organizing other artists at our festivals to designing and building interactive art installations.",
+      "highlights": [
+        "Developed a New World Presents website to showcase the vibe and events they host.",
+        "Designed and built a Main Stage installation where the LED's were controlled by user input from a website. Used SailsJS and NodeJS.",
+        "Design and setup projection mapping content for Main Stage."
+      ]
+    },
+    {
+      "company": "Lunar Transit",
+      "position": "Developer",
+      "website": "http://lunartransit.com",
+      "startDate": "2015-04",
+      "endDate": "Present",
+      "summary": "Lunar Transit is New World Present's Flagship festival bringing the vibe of transformational festivals to Utah.",
+      "highlights": [
+        "Developed website to showcase festival and manage logistics.",
+        "Designed and built a Main Stage installation where the LED's were controlled by user input from a website. Used SailsJS and NodeJS.",
+        "Created an art installation called the Auric Heart to show the users heartbeat pulse through the entire installation."
+      ]
+    },
+    {
+      "company": "Apple Inc.",
+      "position": "Operations Specialist",
+      "website": "https://apple.com",
+      "startDate": "2011-07-26",
+      "endDate": "Present",
+      "summary": "As an Operations Specialist, we managed inventory. Anytime a customer wanted a product, we brought it out to them and congratulated them on their purchase! We also made sure that we met our metrics by keeping accuracy high and shrink low.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Utah",
+      "area": "Mechanical Engineer",
+      "studyType": "Unfinished",
+      "startDate": "2008",
+      "endDate": "2011",
+      "gpa": "3.0",
+      "courses": [
+        "Calculus I-III",
+        "Physics I-II"
+      ]
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Junior",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "AngularJS",
+        "Angular Material",
+        "SailsJS",
+        "ThreeJS",
+        "GsapJS",
+        "NodeJS"
+      ]
+    },
+    {
+      "name": "Mac and iOS",
+      "level": "Intermediate",
+      "keywords": [
+        "iLife",
+        "iWork",
+        "Terminal"
+      ]
+    },
+    {
+      "name": "Development",
+      "level": "Intermediate",
+      "keywords": [
+        "Arduino",
+        "Raspberry Pi",
+        "Proccessing",
+        ""
+      ]
+    },
+    {
+      "name": "Projection Mapping",
+      "level": "Intermediate",
+      "keywords": [
+        "VDMX Software",
+        "MadMapper",
+        "Adobe Creative Suite",
+        "Blender 3D Rendering",
+        "Sketchup 3D Rendering"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Gujurati",
+      "fluency": "2nd Language"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Astronomy",
+      "keywords": []
+    },
+    {
+      "name": "Astrophysics",
+      "keywords": []
+    },
+    {
+      "name": "Outdoors",
+      "keywords": []
+    },
+    {
+      "name": "My Dog",
+      "keywords": []
+    },
+    {
+      "name": "Music",
+      "keywords": []
+    },
+    {
+      "name": "",
+      "keywords": []
+    }
+  ],
+  "references": []
+}

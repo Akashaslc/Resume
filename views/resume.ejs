@@ -1,0 +1,176 @@
+<div class="resume" id="fullpage" ng-cloak>
+
+  <div id="cube" layout="row" layout-align="space-around center">
+    <div id="cube-left">
+      <cube></cube>
+    </div>
+
+    <div id="cube-right">
+      <cube></cube>
+    </div>
+  </div>
+
+  <!-- Front Page -->
+  <div id="frontPage" class="section" layout="column" layout-align="center">
+    <h1 class="md-display-4" id="title">{{info.basics.name}}</h1>
+    <div id="line"></div>
+    <h3 class="md-display-2" id="label">{{info.basics.label}}</h3>
+  </div>
+
+  <!-- My Info -->
+  <div class="section" id="info">
+
+    <h1 class="md-headline" id="header">About Me</h1>
+    <div id="line"></div>
+    <div id="basics">
+      <img src="/images/profile.jpg" id="pic">
+      <h3>{{info.basics.summary}}</h3>
+    </div>
+
+    <!-- Social Media-->
+    <div id="profiles">
+      <md-button class="md-raised" href="{{info.basics.profiles[1].url}}">
+        <md-icon md-svg-src="images/simple-icons/icons/github.svg"></md-icon>
+      </md-button>
+    </div>
+
+  </div>
+
+  <!--Work Experience -->
+  <div class="section">
+    <h1 class="md-headline" id="header">Experiences</h1>
+    <div id="line"></div>
+    <div id="work">
+      <div ng-repeat="work in works" layout="row" layout-sm="column">
+        <div class="workLeft" flex="33">
+          <h3>{{work.company}}</h3>
+          <p>{{work.startDate}} - {{work.endDate}}</p>
+        </div>
+        <div class="workRight" flex="66">
+          <h4>{{work.position}}</h4>
+          <p>{{work.summary}}</p>
+          <ul ng-if="work.highlights != false">
+            <li>{{work.highlights[0]}}</li>
+            <li>{{work.highlights[1]}}</li>
+            <li>{{work.highlights[2]}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="section" id="projects">
+
+    <h1 class="md-headline" id="header">Projects</h1>
+    <div id="line"></div>
+
+    <div layout="row" layout-align="center">
+      <div id="left" layout="column">
+        <div layout="row">
+          <div id="luna">
+            <h3>Luna</h3>
+            <a href="https://github.com/Akashaslc/luna">
+              <img src="/images/luna.png"></img>
+            </a>
+          </div>
+        </div>
+
+        <div layout="row">
+          <div id="glados">
+            <h3>GlaDOS</h3>
+            <a href="https://github.com/Akashaslc/eyesight">
+              <img src="/images/glados.jpg"></img>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="right" layout="column">
+
+        <div layout="row">
+          <div id="heart">
+            <h3>Auric Heart</h3>
+            <a href="https://github.com/Akashaslc/auricHeart">
+              <img src="/images/heart.jpg"></img>
+            </a>
+          </div>
+        </div>
+
+        <div layout="row">
+          <div id="solarsystem">
+            <h3>Solar System</h3>
+            <a href="https://github.com/Akashaslc/Solar-System">
+              <img src="/images/solar.png"></img>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills Chart -->
+  <div class="section" id="chart">
+    <h1 class="md-headline" id="header">Skills</h1>
+    <div id="line"></div>
+    <div id="radar">
+      <canvas class="chart chart-radar" chart-data="data" chart-options="options" chart-labels="labels"></canvas>
+    </div>
+  </div>
+
+  <!-- Education and Interests -->
+  <div class="section" id="edu">
+
+    <h1 class="md-headline" id="header">Education & Interests</h1>
+    <div id="line"></div>
+    <div id="education" layout="row">
+      <div class="eduLeft">
+        <h5 class="md-title" flex>{{info.education[0].institution}}</h5>
+        <h5 class="md-title" flex>{{info.education[0].area}}</h5>
+      </div>
+      <div class="eduRight">
+        <h5 class="md-title" flex>{{info.education[0].startDate}} - {{info.education[0].endDate}}</h5>
+        <h5 class="md-title" flex>{{info.education[0].studyType}}</h5>
+      </div>
+    </div>
+
+    <div id="interests">
+      <div id="line"></div>
+      <div class="container .md-display-1" layout="row" flex>
+        <div class="wrapper" layout="column">
+          <h4 class="md-title">{{interests[0].name}}</h4>
+          <h4 class="md-title">{{interests[1].name}}</h4>
+          <h4 class="md-title">{{interests[2].name}}</h4>
+        </div>
+        <div class="wrapper" layout="column" flex>
+          <h4 class="md-title">{{interests[3].name}}</h4>
+          <h4 class="md-title">{{interests[4].name}}</h4>
+          <h4 class="md-title">{{interests[5].name}}</h4>
+        </div>
+        <div class="wrapper" layout="column" flex>
+          <h4 class="md-title">{{interests[6].name}}</h4>
+          <h4 class="md-title">{{interests[7].name}}</h4>
+          <h4 class="md-title">{{interests[8].name}}</h4>
+        </div>
+        <div class="wrapper" layout="column" flex>
+          <h4 class="md-title">{{interests[9].name}}</h4>
+          <h4 class="md-title">{{interests[10].name}}</h4>
+          <h4 class="md-title">{{interests[11].name}}</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <h4 class="md-title" id="header">Contact</h6>
+    <div>
+      <md-button class="md-raised" href="mailto:{{info.basics.email}}">
+        <md-icon md-svg-src="images/simple-icons/icons/minutemailer.svg"></md-icon>
+      </md-button>
+      <md-button class="md-raised" href="{{info.basics.profiles[0].url}}">
+        <md-icon md-svg-src="images/simple-icons/icons/linkedin.svg"></md-icon>
+      </md-button>
+    </div>
+  </div>
+
+</div>

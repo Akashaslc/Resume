@@ -1,0 +1,246 @@
+body {
+  max-width: 100%;
+}
+
+.color-primary-0 { color: #88B04B }	/* Main Primary color */
+.color-primary-1 { color: #D7EFB2 }
+.color-primary-2 { color: #B3D67E }
+.color-primary-3 { color: #638B25 }
+.color-primary-4 { color: #3F6209 }
+
+.resume {
+  text-align: center;
+}
+
+#cube {
+  position: relative;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fp-tableCell {
+  vertical-align: top !important;
+}
+
+div#frontPage div.fp-tableCell {
+  vertical-align: middle !important;
+}
+
+#title {
+  margin-bottom: 0px;
+  max-width: 600px;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#line {
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  border-bottom: 3px solid #000;
+}
+
+@media (max-width: 700px) {
+  #line {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border-bottom: 3px solid black;
+  }
+}
+
+#label {
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.md-headline {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.section {
+  border-left: 30px solid #3F6209;
+  border-right: 30px solid #3F6209;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0 !important;
+}
+
+#info {
+  background-color: #88B04B;
+}
+
+#basics h3 {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 20px 0 #111;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-bottom: 1%;
+  padding: 1%;
+}
+
+#pic {
+  max-width: 300px;
+  border: 9px solid #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0px #111;
+  margin-bottom: 4%;
+  margin-top: 3%;
+}
+
+#projects {
+  background-color: #88B04B;
+  z-index: 9999 !important;
+}
+
+div#projects img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 9px solid #FFFFFF;
+  transition: .3s cubic-bezier(.52,0,.52,1);
+  box-shadow: 0 0 20px 0px #111;
+}
+
+div#projects img:hover {
+  transition: .3s cubic-bezier(.52,0,.52,1);
+  box-shadow: 0 0 30px 10px #111;
+}
+
+#luna, #heart {
+  margin-top: 10%
+}
+
+#glados, #solarsystem {
+  margin-top: 22%;
+}
+
+#left {
+margin-right: 15%;
+}
+
+#right {
+
+}
+
+#info-left {
+
+}
+
+#info-right {
+
+}
+@media (max-width: 700px) {
+  #basics {
+    margin-top: 50px;
+  }
+  #basics h3 {
+    max-width: 330px;
+    max-height: 559px;
+    margin-left: 10%;
+  }
+
+  img {
+    width: 165px;
+    height: 165px;
+  }
+}
+
+canvas.chart {
+  width: 600px !important;
+  height: 600px !important;
+  margin-top: 9%;
+}
+
+div#radar {
+  margin-left: 29% !important;
+  max-width: 776px !important;
+  max-height: 776px !important;
+}
+
+#work {
+      margin-top: 2%;
+}
+
+.workLeft {
+  text-align: right;
+  padding-right: 2%;
+}
+
+.workRight {
+  text-align: left;
+  padding-right: 21%;
+  padding-left: 0%;
+}
+
+#edu {
+  background-color: #88B04B;
+}
+
+.eduLeft {
+  text-align: right;
+  margin-right: 5%;
+  padding-top: 5px;
+}
+
+.eduRight {
+  width: 800px;
+  text-align: left;
+  margin-left: 5%;
+  padding-top: 5px;
+}
+
+div#edu div.eduRight h5{
+  padding-bottom: 16% !important;
+  margin-top: 34px;
+}
+#education, #classes {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+#interests {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  margin-top: 2%;
+  margin-bottom: 2%
+}
+
+.wrapper {
+  width: 200px;
+}
+
+#contact {
+  position: absolute;
+  bottom: 0;
+  height: 82px;
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0 -2px 4px 0px #111;
+}
+
+div#contact .md-title {
+  margin-top: 3px;
+  margin-bottom: 1px;
+}
