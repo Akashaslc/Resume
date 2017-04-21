@@ -1,42 +1,43 @@
-
-
 var myApp = angular.module('resumeApp', ['ngMaterial', 'chart.js']);
 
 window.onload = function() {
-  $('#fullpage').fullpage({
-    //Navigation
-		anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
-		navigation: true,
-		navigationPosition: 'top',
 
-		//Scrolling
-		css3: true,
-		scrollingSpeed: 700,
-		autoScrolling: true,
-		fitToSection: true,
-		fitToSectionDelay: 1000,
-		scrollBar: false,
-		easing: 'easeInOutCubic',
-		easingcss3: 'ease',
-		loopBottom: true,
-		loopTop: false,
-		loopHorizontal: true,
+  if (window.screen.availWidth > 700) {
+    $('#fullpage').fullpage({
+      //Navigation
+      anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
+      navigation: true,
+      navigationPosition: 'top',
 
-		//Accessibility
-		keyboardScrolling: true,
-		animateAnchor: true,
+      //Scrolling
+      css3: true,
+      scrollingSpeed: 700,
+      autoScrolling: true,
+      fitToSection: true,
+      fitToSectionDelay: 1000,
+      scrollBar: false,
+      easing: 'easeInOutCubic',
+      easingcss3: 'ease',
+      loopBottom: true,
+      loopTop: false,
+      loopHorizontal: true,
 
-		//Design
-    sectionsColor : [],
-		controlArrows: true,
-		verticalCentered: true,
-		paddingTop: '3em',
-		paddingBottom: '10px',
-		responsiveWidth: 0,
-		responsiveHeight: 0,
-		responsiveSlides: false,
+      //Accessibility
+      keyboardScrolling: true,
+      animateAnchor: true,
 
-  });
+      //Design
+      sectionsColor: [],
+      controlArrows: true,
+      verticalCentered: true,
+      paddingTop: '3em',
+      paddingBottom: '10px',
+      responsiveWidth: 0,
+      responsiveHeight: 0,
+      responsiveSlides: false,
+
+    });
+  }
 };
 
 myApp.controller('resumeCtrl', ['$scope', 'works', 'skills', 'interests', function($scope, works, skills, interests) {
@@ -115,13 +116,13 @@ myApp.controller('resumeCtrl', ['$scope', 'works', 'skills', 'interests', functi
 
 
 
-myApp.config(['ChartJsProvider', function (ChartJsProvider) {
-    // Configure all charts
-    ChartJsProvider.setOptions({
-      chartColors: ['#3F6209']
-    });
-    // Configure all line charts
-    ChartJsProvider.setOptions('line', {
-      showLines: false
-    });
-  }]);
+myApp.config(['ChartJsProvider', function(ChartJsProvider) {
+  // Configure all charts
+  ChartJsProvider.setOptions({
+    chartColors: ['#3F6209']
+  });
+  // Configure all line charts
+  ChartJsProvider.setOptions('line', {
+    showLines: false
+  });
+}]);

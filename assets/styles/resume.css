@@ -2,11 +2,28 @@ body {
   max-width: 100%;
 }
 
-.color-primary-0 { color: #88B04B }	/* Main Primary color */
-.color-primary-1 { color: #D7EFB2 }
-.color-primary-2 { color: #B3D67E }
-.color-primary-3 { color: #638B25 }
-.color-primary-4 { color: #3F6209 }
+.color-primary-0 {
+  color: #88B04B
+}
+
+
+/* Main Primary color */
+
+.color-primary-1 {
+  color: #D7EFB2
+}
+
+.color-primary-2 {
+  color: #B3D67E
+}
+
+.color-primary-3 {
+  color: #638B25
+}
+
+.color-primary-4 {
+  color: #3F6209
+}
 
 .resume {
   text-align: center;
@@ -15,6 +32,7 @@ body {
 #cube {
   position: relative;
 }
+
 canvas {
   position: absolute;
   top: 0;
@@ -44,16 +62,6 @@ div#frontPage div.fp-tableCell {
   margin-right: auto;
   width: 500px;
   border-bottom: 3px solid #000;
-}
-
-@media (max-width: 700px) {
-  #line {
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    border-bottom: 3px solid black;
-  }
 }
 
 #label {
@@ -112,12 +120,12 @@ div#projects img {
   height: 200px;
   border-radius: 50%;
   border: 9px solid #FFFFFF;
-  transition: .3s cubic-bezier(.52,0,.52,1);
+  transition: .3s cubic-bezier(.52, 0, .52, 1);
   box-shadow: 0 0 20px 0px #111;
 }
 
 div#projects img:hover {
-  transition: .3s cubic-bezier(.52,0,.52,1);
+  transition: .3s cubic-bezier(.52, 0, .52, 1);
   box-shadow: 0 0 30px 10px #111;
 }
 
@@ -130,30 +138,26 @@ div#projects img:hover {
 }
 
 #left {
-margin-right: 15%;
+  margin-right: 15%;
 }
 
-#right {
+#right {}
 
-}
+#info-left {}
 
-#info-left {
+#info-right {}
 
-}
-
-#info-right {
-
-}
 @media (max-width: 700px) {
   #basics {
-    margin-top: 50px;
+    margin-top: 20px;
   }
   #basics h3 {
     max-width: 330px;
     max-height: 559px;
-    margin-left: 10%;
+    font-size: 13px;
+    margin-left: auto;
+    margin-right: 10px;
   }
-
   img {
     width: 165px;
     height: 165px;
@@ -167,13 +171,11 @@ canvas.chart {
 }
 
 div#radar {
-  margin-left: 29% !important;
-  max-width: 776px !important;
-  max-height: 776px !important;
+  margin-left: 29%;
 }
 
 #work {
-      margin-top: 2%;
+  margin-top: 2%;
 }
 
 .workLeft {
@@ -204,10 +206,11 @@ div#radar {
   padding-top: 5px;
 }
 
-div#edu div.eduRight h5{
+div#edu div.eduRight h5 {
   padding-bottom: 16% !important;
   margin-top: 34px;
 }
+
 #education, #classes {
   width: 300px;
   margin-left: auto;
@@ -228,7 +231,6 @@ div#edu div.eduRight h5{
 }
 
 .wrapper {
-  width: 200px;
 }
 
 #contact {
@@ -243,4 +245,169 @@ div#edu div.eduRight h5{
 div#contact .md-title {
   margin-top: 3px;
   margin-bottom: 1px;
+}
+
+
+/* Screen adapting */
+
+@media (max-width: 700px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+  }
+  .section {
+    height: 600px;
+  }
+  #cube {
+    display: none;
+  }
+  cube {
+    display: none;
+  }
+  #title {
+    font-size: 50px;
+    display: initial;
+  }
+  h1#title {
+    max-height: 88px;
+    min-width: 300px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  #line {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 175px;
+    border-bottom: 2px solid black;
+  }
+  #label {
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 0;
+  }
+  #header {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 2%;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  #basics {
+    margin-top: 20px;
+  }
+  #basics h3 {
+    max-width: 250px;
+    max-height: 559px;
+    font-size: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6%;
+  }
+  img {
+    width: 165px;
+    height: 165px;
+  }
+  #exp {
+    height: 700px;
+  }
+  div#radar {
+    margin-left: 10px;
+  }
+  div#chart div#radar canvas {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .workLeft {
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+  }
+  h3#comp {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 66px;
+  }
+  .workRight {
+    min-width: 340px;
+    padding-right: 95px;
+    padding-left: 20px;
+    font-size: 10px;
+  }
+  ul {
+    padding: 0;
+    min-width: 140px;
+  }
+  div#projects {
+    height: 1375px;
+  }
+  div#projects #line {
+  }
+  #proj {
+
+  }
+  div#projects img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 10px 0px #111;
+  }
+  div#projects h3 {
+    margin-bottom: 6%;
+    margin-top: 27%;
+  }
+  #luna, #glados, #heart, #solarsystem {
+    position: relative;
+    margin: auto;
+    padding: 0;
+  }
+  #left {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #right {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #chart {
+    position: relative;
+    height: 320px;
+  }
+  #edu {
+    height: 573px;
+  }
+  .eduLeft {
+    min-width: 155px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .eduRight {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  #interests {
+    width: 300px;
+  }
+  .container {
+
+  }
+  .wrapper {
+
+  }
+  div.wrapper h4 {
+    font-size: small;
+  }
+  #contact {
+    height: 96px;
+    position: relative;
+    display: block;
+  }
 }
